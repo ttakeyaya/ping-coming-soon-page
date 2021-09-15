@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,13 +17,33 @@
 </head>
 <body>
 
-  We are launching soon!
+  <main>
+    
+    <img src="./images/logo.svg" alt="PINGs logo">
+    
+    <h1>We are launching soon!</h1>
 
-  Subscribe and get notified
+    <p>Subscribe and get notified</p>
+  
+    <form action="#">
+      <label for="email">
+        <input type="email" value="Your email address...">
+      </label>
+      <button type="submit">Notify Me</button>
+    </form>
+    
+    <img src="./images/illustration-dashboard.png" alt="slack illustration image">
 
-  Notify Me
 
-  &copy; Copyright Ping. All rights reserved.
+  </main>
+  <footer>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    &copy; Copyright Ping. All rights reserved.
+  </footer>
+
+  
 
   <footer>
     <p class="attribution">

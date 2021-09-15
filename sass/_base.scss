@@ -1,0 +1,43 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+*/
+
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,700&display=swap");
+
+// Font variable
+$libre: "Libre Franklin", sans-serif;
+
+// Colors
+:root {
+  --color-primary-blue: hsl(223, 87%, 63%);
+
+  --color-secondary-pale-blue: hsl(223, 100%, 88%);
+  --color-secondary-light-red: hsl(354, 100%, 66%);
+
+  --color-neutral-gray: hsl(0, 0%, 59%);
+  --color-neutral-blue: hsl(209, 33%, 12%);
+}
+
+// Resetting
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  font-family: $libre;
+}
