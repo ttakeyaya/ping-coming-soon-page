@@ -17,39 +17,46 @@
 </head>
 <body>
 
-  <main>
+  <main class="landing">
     
-    <img src="./images/logo.svg" alt="PINGs logo">
+    <img src="./images/logo.svg" alt="PINGs logo" class="landing__img">
     
-    <h1>We are launching soon!</h1>
+    <h1 class="landing__title"><span class="landing__title-thin">We are launching</span> soon!</h1>
 
-    <p>Subscribe and get notified</p>
+    <p class="landing__content">Subscribe and get notified</p>
   
-    <form action="#">
-      <label for="email">
-        <input type="email" value="Your email address...">
+    <form class="form" name="landingForm" onsubmit="onSubmitHandler(); return false">
+      <label for="email" class="form__label">
+        <input type="email" value="Your email address..." class="form__input" name="email">
+        <p class="error-message">Please provide a valid email address</p>
       </label>
-      <button type="submit">Notify Me</button>
+      <!-- disable validation functionalities given by the browser -->
+      <button type="submit" class="button" formnovalidate>Notify Me</button>
     </form>
     
-    <img src="./images/illustration-dashboard.png" alt="slack illustration image">
+    
+    <img src="./images/illustration-dashboard.png" alt="slack illustration image" class="slack__img">
 
 
   </main>
-  <footer>
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
-    &copy; Copyright Ping. All rights reserved.
+  <footer class="footer">
+    <ul class="footer__media-links">
+      <li class="footer__media-links_item"><a href="#"><i class="fab fa-facebook-f"></i></a></i></li>
+      <li class="footer__media-links_item"><a href="#"><i class="fab fa-twitter"></i></a></i></li>
+      <li class="footer__media-links_item"><a href="#"><i class="fab fa-instagram"></i></a></i></li>
+    </ul>
+    
+    <p class="footer__copyright"><small>&copy; Copyright Ping. All rights reserved.</small></p>
   </footer>
 
   
 
-  <footer>
+  <div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </div>
+  <script src="./js/validation.js"></script>
 </body>
 </html>
