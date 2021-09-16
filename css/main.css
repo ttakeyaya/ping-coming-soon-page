@@ -96,6 +96,13 @@ body {
   padding-left: 35px;
   color: #f66666;
 }
+.landing .form__label .error-message-empty {
+  display: none;
+  text-align: left;
+  font-size: 12px;
+  padding-left: 35px;
+  color: #f66666;
+}
 @media screen and (max-width: 510px) {
   .landing .form__label {
     width: 70%;

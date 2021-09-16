@@ -53,6 +53,13 @@
         padding-left: 35px;
         color: rgb(246, 102, 102);
       }
+      .error-message-empty {
+        display: none;
+        text-align: left;
+        font-size: 12px;
+        padding-left: 35px;
+        color: rgb(246, 102, 102);
+      }
       @media screen and (max-width: 510px) {
         width: 70%;
         margin: 0 auto;

@@ -1,5 +1,6 @@
 let form = document.forms.landingForm;
 let error = document.querySelector('.error-message');
+let errorEmpty = document.querySelector('.error-message-empty');
 let inputField = form.elements.email;
 
 
@@ -13,6 +14,11 @@ inputField.onblur = function(){
 }
 
 function onSubmitHandler(){
+  resetDiplayStyle();
+  if(userInput.length === 0){
+    errorEmpty.style.display = "block";
+    return false;
+  }
   if(checkEmail(userInput)){
     form.action="#";
     form.method="POST";
@@ -20,7 +26,13 @@ function onSubmitHandler(){
   }else{
     inputField.classList.add('form__input-error');
     error.style.display = "block";
+    return false;
   }
+}
+
+function resetDiplayStyle(){
+  errorEmpty.style.display = 'none';
+  error.style.display='none';
 }
 
 function checkEmail(email){
